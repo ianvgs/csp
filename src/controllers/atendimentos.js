@@ -49,6 +49,9 @@ module.exports = app => {
 
         console.log(req.body)
 
+        
+        
+
 
         if(!req.body.primeiro_nome || !req.body.ultimo_nome ||!req.body.email ||!req.body.telefone){
             res.json({message:"Faltou algum dado para a inserção correta no banco de dados, envie novamente primeiro_nome, ultimo_nome, telefone e email"})
