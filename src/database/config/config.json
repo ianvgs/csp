@@ -1,0 +1,13 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "csp",
+    "host": "localhost",
+    "port":3306,
+    "dialect": "mysql",
+    "define":{
+      "timestamps":true
+    }
+  }
+}

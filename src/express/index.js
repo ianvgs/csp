@@ -4,9 +4,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser')
 
 
-module.exports = () => {
-        
-        const app = express();       
+module.exports = () => {        
+        const app = express();      
         
         app.use((req, res, next) => {
                 res.header("Access-Control-Allow-Origin", "*")
@@ -16,12 +15,15 @@ module.exports = () => {
 
         app.use(bodyParser.urlencoded({ extended: true }))        
         app.use(bodyParser.json())
-         
-      
+
         consign()
-                .include('/src/controllers')
+                .include('/src/express/routes.js')
                 .into(app)
         return app
+
+
+
+
         
 }
 
