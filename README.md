@@ -1,4 +1,4 @@
-Manual de instalação
+   Manual de instalação
 
 Necessário ter Node.js instalado na máquina e banco MySQL com as seguintes configurações:
     "username": "root",
@@ -17,7 +17,7 @@ Realizar o download do código, extrair, acessar o diretório e no terminal coma
 Pronto, já está criado o database “csp”, as tabelas “clientes” e “telefones”, e já foi feito o povoamento das tabelas com 4 registros cada.
 
 
-ROTAS
+**************ROTAS*********************************
 
 POST: http://localhost:3000/clientes/
 Função: Cadastra um cliente com os atributos abaixo:
@@ -26,11 +26,7 @@ Key e values opcionais: telefone1, telefone2, telefone3, telefone4, telefone5, t
 
 GET : http://localhost:3000/clientes/
 Função: Lista registros informando o atributo primeiroNome e/ou email:
-Key e values obrigatórios: primeiroNome  e/ou email,.
-
-
-
-
+Key e values obrigatórios: primeiroNome  e/ou email.
 
 PATCH : http://localhost:3000/clientes/
 Função: Altera registros informando o ID que deseja alterar e informando os outros dados que deseja alterar conforme atributos abaixo:
@@ -42,7 +38,7 @@ Função: deleta um registro informando o Id do mesmo:
  Key e values obrigatórios: ID.
 
 
-****ROTA BONUS
+***************ROTA BONUS********************************
 GET : http://localhost:3000/todosclientes/ 
 Função: Lista todos os clientes da tabela clientes
  *Obrigatório informar no headers authorization Bearer Token : ”csp”.
