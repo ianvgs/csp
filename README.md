@@ -18,6 +18,7 @@ Pronto, já está criado o database “csp”, as tabelas “clientes” e “te
 
 
 **************ROTAS*********************************
+Key e valures: Somente é aceito os atibutos e valores através de requisições JSON/URLencoded, ou seja, através do body da requisição.
 
 POST: http://localhost:3000/clientes/
 Função: Cadastra um cliente com os atributos abaixo:
